@@ -8,7 +8,7 @@ const baseUrl = "https://kasir-api.belajarqa.com";
 describe("Get User Detail", ()=> {
     it ('Positive - success get User Detail', async()=>{
         let accessToken = await loginToken()
-        console.log(accessToken)
+        //console.log(accessToken)
         let userId = await createUser()
         console.log(userId)
         const response = await request(baseUrl)
@@ -17,5 +17,12 @@ describe("Get User Detail", ()=> {
 
         expect((await response).status).to.equal(200)
         console.log((await response).body)
+    })
+    it ('Positive - success get data role user' ,async () => {
+        let accessToken = await loginToken()
+        const response = await request(baseUrl)
+        //Assertion using Chai
+        console.log((await response).getUserParam)
+       // console.log((await response).body)
     })
 })

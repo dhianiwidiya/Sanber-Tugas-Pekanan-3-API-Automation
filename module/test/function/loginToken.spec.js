@@ -13,7 +13,7 @@ export async function loginToken(){
     .set("Content-Type","application/json") //Header
 
     let accessToken = (await response).body.data.accessToken
-    return accessToken
+    return (await accessToken)
 }
 //Pemanggilan versi common JS
 //module.exports = {createToken}

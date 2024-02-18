@@ -1,7 +1,9 @@
 import request from "supertest";
 import { baseUrl } from "../../Data/config.js"
+import { loginToken } from "../function/loginToken.spec.js";
+import { createUser } from "../function/createUser.spec.js";
 
-async function UpdateUser(){
+export async function UpdateUser(){
     let accessToken = await loginToken()
     let userId = await createUser()
     const payload = {
@@ -13,6 +15,6 @@ async function UpdateUser(){
         .send(payload)
         .set('Authorization', 'Bearer ' + accessToken) 
 
-    return ((await response).body)
+    return (await response)
 
 }

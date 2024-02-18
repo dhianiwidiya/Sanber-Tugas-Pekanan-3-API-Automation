@@ -1,7 +1,7 @@
 import request from "supertest";
 import { expect } from "chai";
 import { loginToken } from "../function/loginToken.spec.js";
-import { createUser } from "../function/createUser.spec.js";
+//import { createUser } from "../function/createUser.spec.js";
 
 const baseUrl = "https://kasir-api.belajarqa.com";
 const paramq = "Toko-Test"

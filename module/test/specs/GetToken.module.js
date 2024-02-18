@@ -21,7 +21,7 @@ describe("Get Token Scenario" ,() => {
 
     //Assertion using Chai
     expect((await response).status).to.equal(201)
-        let accessToken = (await response).body.data.accessToken
+    let accessToken = (await response).body.data.accessToken
     console.log(await loginToken)
     })
 

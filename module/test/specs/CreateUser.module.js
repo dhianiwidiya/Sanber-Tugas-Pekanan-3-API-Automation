@@ -1,7 +1,7 @@
 //ini adalah contoh api automation with module js
 import request from "supertest";
 import { expect } from "chai";
-import { createUser } from "../function/createUser.spec.js";
+//import { createUser } from "../function/createUser.spec.js";
 import { loginToken } from "../function/loginToken.spec.js";
 
 const baseUrl = "https://kasir-api.belajarqa.com";

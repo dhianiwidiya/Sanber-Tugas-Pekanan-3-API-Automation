@@ -1,20 +1,10 @@
 import request from "supertest";
 import { baseUrl }  from "../../Data/config.js"
+import { loginToken } from "../function/loginToken.spec.js";
 
 export async function createUser(){
-        const payloadtoken = {
-            "email": "tokotest@yopmail.com",
-            "password": "qwerty123456"
-        }
-         //send request
-        const responseAccessToken = await request(baseUrl) //baseUrl
-        .post("/authentications") //endpoint
-        .send(payloadtoken)//request body
-        .set("Content-Type","application/json") //Header
-    
-        let accessToken = (await responseAccessToken).body.data.accessToken
-    //const accessToken = await loginToken()
-    //console.log(accessToken)
+    let accessToken = await loginToken()
+    console.log(accessToken)
     const payload = 
     {
         "name": "Toko-Test",

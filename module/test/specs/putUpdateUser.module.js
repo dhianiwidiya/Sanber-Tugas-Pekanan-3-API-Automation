@@ -22,4 +22,11 @@ describe("Update User", ()=> {
         expect((await response).status).to.equal(200)
         console.log((await response).body)
     })
+    it ('Positive - success get data name new user' ,async () => {
+        let accessToken = await loginToken()
+        const response = await request(baseUrl)
+        //Assertion using Chai
+        console.log((await response).getUserParam)
+       // console.log((await response).body)
+    })
 })
