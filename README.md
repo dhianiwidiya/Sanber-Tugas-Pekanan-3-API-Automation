@@ -1,3 +1,3 @@
 Capture hasil
-file:///Users/dhianiwidiya/Documents/Bootcamp%20QA%20Automation/Sanber-Tugas-Pekanan-3/mochawesome-report/mochawesome.html
 
+![alt text](BBBBBA35-29CF-47F4-91AF-3D3D9ED35BA9.jpeg)
